@@ -1,0 +1,31 @@
+{
+  "name": "section508dash",
+  "version": "1.0.0",
+  "description": "Web services to see 508 compliance predictions for solicitations posted to FBO",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "Bisson",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.15.2",
+    "date-and-time": "^0.4.0",
+    "emailjs": "^1.0.8",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.7.0",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  }
+}
